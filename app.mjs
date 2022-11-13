@@ -1,7 +1,7 @@
 import express from "express";
 
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 
 app.use('/login', (req, res) => res.send('Login'))
 app.use('/Register', (req, res) => res.send('Register'))
